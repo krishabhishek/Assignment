@@ -1,0 +1,20 @@
+Steps to run the application
+
+1) Install MySql if not present and create database
+create database rippleAssignment
+
+2)Change MySql Username and password as per your MySql Installation
+   i)open src/main/resources/application.properties file.
+   ii)change spring.datasource.username and spring.datasource.password properties
+   as per your mysql installation.
+3) Run the app
+Command for running app-
+mvn spring-boot:run
+
+The embedded jetty server will run on 8181 port. You can change the port in
+application.properties.
+
+You can also package the application in the form of a jar file and then run it like so
+mvn package
+java -jar target/ripple-1.0-SNAPSHOT.jar
+
